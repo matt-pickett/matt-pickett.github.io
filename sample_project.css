@@ -1,7 +1,7 @@
 .form {
     border: 1px solid black;
 	border-radius: 10px;
-    width:400px;
+    width: 400px;
     padding-bottom: 3em;
     margin:auto;
 }
@@ -45,10 +45,6 @@
 div {
     padding: 1em;
 }
-
-/* .newsletter {
-    text-align: left;
-} */
 
 .user-input input {
       float: right;
