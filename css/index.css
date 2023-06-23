@@ -1,0 +1,335 @@
+:root {
+    --black: #38393c;
+    --blue: #9eb3c6;
+    --orange:#c75639 ;
+    --tan: #d6cec9;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: var(--blue);
+	color: var(--black);
+	font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif !important;
+	text-shadow: 1px 2px 4px rgba(0,0,0,0.5);	
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: var(--tan);
+	text-decoration: none;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+	background-color: var(--black);
+	border-color: var(--black);
+	color: var(--tan);
+	z-index: 3;
+	transition: all 0.3s ease-out;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+	outline: none;
+	box-shadow: none;
+	transition: all 0.3s ease-out;
+}
+
+.btn-primary:hover {
+	background-color: var(--blue);
+	border-color: var(--blue);
+	color: var(--black);
+	transition: all 0.3s ease-out;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited {
+	margin-bottom: 35px;
+	background-color: var(--tan) !important;
+	border-color: var(--tan) !important;
+	color: var(--black) !important;
+	z-index: 99;
+	transition: all 0.3s ease-out;
+}
+
+.btn-secondary:focus,
+.btn-secondary:active {
+	outline: none !important;
+	box-shadow: none !important;
+	transition: all 0.3s ease-out;
+}
+
+.btn-secondary:hover {
+	background-color: var(--orange) !important;
+	border-color: var(--orange) !important;
+	color: var(--tan) !important;
+	transition: all 0.3s ease-out;
+}
+
+.btn-tertiary,
+.btn-tertiary:hover,
+.btn-tertiary:active,
+.btn-tertiary:visited {
+	margin-bottom: 35px;
+	background-color: var(--blue) !important;
+	border-color: var(--blue) !important;
+	color: var(--black) !important;
+	z-index: 99;
+	transition: all 0.3s ease-out;
+}
+
+.btn-tertiary:focus,
+.btn-tertiary:active {
+	outline: none !important;
+	box-shadow: none !important;
+	transition: all 0.3s ease-out;
+}
+
+.btn-tertiary:hover {
+	background-color: var(--orange) !important;
+	border-color: var(--orange) !important;
+	color: var(--tan) !important;
+	transition: all 0.3s ease-out;
+}
+/* End buttons */
+
+/* Cards */
+.card-primary {
+	border: 5px solid var(--black);
+	border-radius: 20px;
+	background-color: var(--tan);
+	color: var(--black);
+	z-index: 2;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.card-secondary {
+	background-color: var(--black);
+	border: 5px solid var(--black);
+	border-radius: 20px;
+	color: var(--tan);
+	border-radius: 20px;
+	z-index: 2;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+/* End cards */
+
+/* Navigation Button */
+.scrollTop {
+	border-radius: 50% !important;
+}
+/* End Navigation Button */
+
+/* Navigation Bar */
+.navbar {
+	background-color: var(--black);
+}
+
+.nav-link{
+	color: var(--tan) !important;
+}
+
+.nav-link:hover {
+	color: var(--orange) !important;
+	transition: all 0.3s ease-out;
+}
+
+/* End Navigation Bar */
+
+/* Welcome/Home Section */
+
+.home{
+	background-image: url('../img/landscape.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.homeContainer {
+	position: fixed;
+	transition: none !important;
+}
+
+.intro {
+	font-size: 2vw;
+	color:var(--tan);
+}
+.name {
+	font-size: 5vw;
+	font-weight: bold;
+	color: var(--tan);
+}
+
+/* End Welcome/Home Section */
+
+/* About Section */
+
+.about {
+	border-top: 10px solid var(--black);
+}
+.about-info {
+	background-color: var(--black);
+	color: var(--tan);
+	border-radius: 20px;
+	font-size: 1.5rem;
+}
+
+/* End About Section */
+
+/* Experience Section */
+
+.resume-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.psu-logo {
+	height: 3em;
+	
+}
+
+.tech-skills {
+	font-size: 1.2em;
+}
+/* End Experience Section */
+ 
+/* Projects Section */
+
+.project-link {
+	overflow: hidden;
+}
+
+.project-item-container {
+	height: 400px;
+}
+
+.img-cover {
+	object-fit: cover;
+}
+
+.img-fill {
+	object-fit: cover;
+}
+
+/* End Projects Section */
+
+/* Contact Section */
+
+.contact-form {
+	background-color: var(--black);
+	color: var(--tan);
+	border-radius: 20px;
+}
+
+.form-control:focus, .form-control:active {
+	outline: none !important;
+	box-shadow: none !important;
+	transition: all 0.3s ease-out;
+}
+
+/* End Contact Section */
+
+/* Media Queries */
+
+/* Bootstrap small viewports and below */
+@media (max-width: 767px) {
+	.home {
+		background-position: 70% 30%;
+	}
+
+	.intro {
+		font-size: 6vw;
+	}
+
+	.name {
+		font-size: 12vw;
+	}
+	.card-primary:hover,
+	.card-primary:active,
+	.card-secondary:hover,
+	.card-secondary:active,
+	.project-card:hover,
+	.project-card:active {
+		transform: translateY(-5px) scale(1.02) translateZ(0);
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+		transition: all 0.3s ease-out;
+	}
+}
+/* Bootstrap medium viewport */
+@media (min-width: 768px) and (max-width: 991px) {
+	.home {
+		background-position: 70% 30%;
+	}
+	.intro {
+		font-size: 4vw;
+		/* margin-bottom: 300px; */
+	}
+
+	.name {
+		font-size: 8vw;
+	}
+	.card-primary:hover,
+	.card-primary:active,
+	.card-secondary:hover,
+	.card-secondary:active,
+	.project-card:hover,
+	.project-card:active {
+		transform: translateY(-5px) scale(1.02) translateZ(0);
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+		transition: all 0.3s ease-out;
+	}
+}
+
+/* Bootstrap large viewports and above */
+@media (min-width: 992px) {
+	.home {
+		background-position: center;
+	}
+	.intro {
+		font-size: 3vw;
+	}
+	
+	.name {
+		font-size: 5vw;
+	}
+	.card-primary:hover,
+	.card-primary:active,
+	.card-secondary:hover,
+	.card-secondary:active,
+	.project-card:hover,
+	.project-card:active {
+		transform: translateY(-5px) scale(1.04) translateZ(0);
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+		transition: all 0.3s ease-out;
+	}
+}
+
+/* Massive screen size */
+@media (min-width: 3038px) {
+	.aboutButton {
+		display: none !important;
+	}
+}

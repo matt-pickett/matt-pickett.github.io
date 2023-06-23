@@ -4,121 +4,329 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Website</title>
-		<link rel="stylesheet" href="index.css" />
-		<link rel="stylesheet" href="styles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-		/>
-		<script defer src="index.js"></script>
+		<link rel="icon" type="img/x-icon" href="img/favicon2.ico"/>
+		<title>Matthew Pickett</title>
+
+		<!--Bootstrap CSS Plugin *MUST BE BEFORE OTHER BOOTSTRAP*-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!--Bootstrap JS Bundle (with Popper)-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<!--JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<!--Local CSS and JS-->
+		<link rel="stylesheet" href="css/index.css"/>
+		<script defer src="js/index.js"></script>
+
+		<noscript>To use this site, please enable JavaScript.</noscript>
 	</head>
 	<body>
-		<nav class="nav-list">
-			<ul class="unord-list">
-				<li class="list-item">
-					<a class="nav-link" href="#About">About</a>
-				</li>
-				<li class="list-item">
-					<a class="nav-link" href="#Experience">Experience</a>
-				</li>
-				<li class="list-item">
-					<a class="nav-link" href="#Projects">Projects</a>
-				</li>
-				<li class="list-item">
-					<a class="nav-link" href="#Contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="main">
-			<section id="Home" class="home">
-				<div class="container-intro">
-					<div class="intro1">
-						<text>Hi, I'm</text>
-						<div class="intro2">
-							<text>Matthew Pickett.</text>
-							<form>
-								<button class="btn btn-primary btn-lg" id="about-me">
-									About Me
-								</button>
-							</form>
-						</div>
-					</div>
-					<img
-						class="image"
-						src="https://lh3.googleusercontent.com/dSQVmCWkfwabivjA8fr4F6-UTf2W5HegjwzNKUZwGf8tjK0O8w-tXIWmxXamRotHS16fbTPQS0jWMABh-_L1TlYKtAmQTr-oi1qF_k-BqojntajPk8vMV7Jc1c3zPQZpCnt1pG3K5tY"
-						alt="close-up shot of my face"
-					/>
+
+		<!--Navigation Bar-->
+		<nav class="navbar navbar-expand-md fixed-top p-0 navbar-dark" id="Navbar">
+			<section class="container-fluid">
+				<button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a href="" class="navbar-brand px-3">
+					<img 
+						src="img/my_brand2.png" 
+						alt="my brand"
+						class="my_brand" 
+						width="50" 
+						height="50">
+				</a>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item mx-3 fs-3 mx-lg-4" id="aboutNav">
+							<a href="#About" class="nav-link">About</a>
+						</li>
+						<li class="nav-item mx-3 fs-3 mx-lg-4" id="experienceNav">
+							<a href="#Experience" class="nav-link">Experience</a>
+						</li>
+						<li class="nav-item mx-3 fs-3 mx-lg-4" id="projectsNav">
+							<a href="#Projects" class="nav-link">Projects</a>
+						</li>
+						<li class="nav-item mx-3 fs-3 mx-lg-4" id="contactNav">
+							<a href="#Contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
 				</div>
 			</section>
-			<section id="About" class="about">
-				<h1><center>About Me</center></h1>
-				<p>
-					Hi! My name is Matthew. I'm a senior at Portland State University
-					majoring in Computer Science. I have experience with C, C++, Java, and
-					Python but I'm most familiar with C and C++. My interests include web
-					development, artificial intelligence, and
-					computer networking. In my free time, I enjoy traveling and exploring
-					new places.
-				</p>
-			</section>
-			<section id="Experience" class="experience">
-				<h1><center>Experience</center></h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-					incidunt quae debitis eius iste quia at in, alias culpa tempora
-					dolores. Sed sequi impedit nam deserunt cumque nisi molestiae? Quasi.
-					Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Laborum aliquid repudiandae sapiente laboriosam minus asperiores
-					reiciendis aliquam praesentium neque eius optio, vitae, exercitationem
-					suscipit eum? Sed molestiae debitis sequi odit. Lorem ipsum dolor sit
-					amet consectetur adipisicing elit. Provident, optio exercitationem
-					fuga adipisci soluta nam itaque, sit eos consequuntur voluptatum sunt
-					quo alias dolorum aliquid est reprehenderit, neque cum. Iste! Lorem
-					ipsum dolor sit amet consectetur, adipisicing elit. Aperiam sunt
-					nesciunt veniam voluptatum fuga, doloremque, numquam ut eos rem
-					temporibus sed? Facere ea accusantium dicta praesentium deserunt!
-					Blanditiis, odio explicabo.
-				</p>
-			</section>
-			<section id="Projects" class="projects">
-				<h1><center>Projects</center></h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-					incidunt quae debitis eius iste quia at in, alias culpa tempora
-					dolores. Sed sequi impedit nam deserunt cumque nisi molestiae? Quasi.
-					Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Laborum aliquid repudiandae sapiente laboriosam minus asperiores
-					reiciendis aliquam praesentium neque eius optio, vitae, exercitationem
-					suscipit eum? Sed molestiae debitis sequi odit. Lorem ipsum dolor sit
-					amet consectetur adipisicing elit. Provident, optio exercitationem
-					fuga adipisci soluta nam itaque, sit eos consequuntur voluptatum sunt
-					quo alias dolorum aliquid est reprehenderit, neque cum. Iste! Lorem
-					ipsum dolor sit amet consectetur, adipisicing elit. Aperiam sunt
-					nesciunt veniam voluptatum fuga, doloremque, numquam ut eos rem
-					temporibus sed? Facere ea accusantium dicta praesentium deserunt!
-					Blanditiis, odio explicabo.
-				</p>
-			</section>
-			<section id="Contact" class="contact">
-				<h1><center>Contact</center></h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-					incidunt quae debitis eius iste quia at in, alias culpa tempora
-					dolores. Sed sequi impedit nam deserunt cumque nisi molestiae? Quasi.
-					Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Laborum aliquid repudiandae sapiente laboriosam minus asperiores
-					reiciendis aliquam praesentium neque eius optio, vitae, exercitationem
-					suscipit eum? Sed molestiae debitis sequi odit. Lorem ipsum dolor sit
-					amet consectetur adipisicing elit. Provident, optio exercitationem
-					fuga adipisci soluta nam itaque, sit eos consequuntur voluptatum sunt
-					quo alias dolorum aliquid est reprehenderit, neque cum. Iste! Lorem
-					ipsum dolor sit amet consectetur, adipisicing elit. Aperiam sunt
-					nesciunt veniam voluptatum fuga, doloremque, numquam ut eos rem
-					temporibus sed? Facere ea accusantium dicta praesentium deserunt!
-					Blanditiis, odio explicabo.
-				</p>
-			</section>
+		</nav>
+		<!--End Navigation Bar-->
+
+		<!--Navigation Button-->
+		<button onclick="topFunction()" id="scroll_top" class="scrollTop btn-secondary btn btn-lg position-fixed bottom-0 end-0 mb-4 me-2 me-md-4">￪</button>
+		<!--End Navigation Button-->
+
+		<!--Welcome/Home Section-->
+		<section class="home h-100 py-5" id="Home">
+			<div class="container-fluid h-100" id="home">
+				<div class="introRow row d-flex h-100 align-items-lg-center align-items-center">
+					<div class="col-lg-6 col-12 d-flex ms-md-3 align-items-center justify-content-center my-5">
+						<div class="homeContainer m-auto text-lg-start text-center" id="homecontainer">
+							<div class="intro">Hi, I'm</div>
+							<div class="name">
+								<span class="name1">Matthew</span>
+								<span class="name2">Pickett</span> 
+							</div>
+							<a type="button" class="aboutButton btn btn-secondary btn-lg mt-lg-4 d-lg-inline d-none" id="aboutBtn" href="#About">About Me</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<!--End Welcome/Home Section-->
+
+		<!--About Section-->
+		<section class="about" id="About">
+			<div class="container-fluid text-center pt-5">
+				<h1 class="about-me mb-3">About Me</h1>
+				<div class="row d-flex justify-content-center">
+					<div class="col-12">
+						<div class="m-auto text-center">
+							<p class="about-info p-5">
+								Hi! My name is Matthew and I am a recent CS grad from Portland State University. I have a passion for technology and love building software that makes people's lives easier. I'm <u>actively looking for entry level software engineer roles.</u> Please fill out the form in the 'Contact' section with any opportunities!							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End About Section-->
+
+		<!--Experience Section-->
+		<section class="experience" id="Experience">
+			<div class="container-fluid text-center pt-5">
+				<div class="mb-5">
+					<h1>Experience</h1>
+					<a class="d-inline-block" href="pdf/Resume.pdf">
+						<h4><u>My resume</u></h4>
+					</a>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-12 col-lg-4 pb-3 pb-lg-0">
+						<div class="card-primary flex-item h-100" id="Education">
+							<div class="card-body row">
+								<div class="col-4 col-lg-12 mb-lg-3 d-flex align-items-center align-items-lg-start justify-content-center">
+									<div class="education-head-container">
+										<h2 class="card-title m-1 text-break">Education</h2>
+										<img src="img/education.png" class="resume-logo" alt="education logo">
+									</div>
+								</div>
+								<div class="col-8 col-lg-12 d-flex pb-lg-1 align-items-center justify-content-start justify-content-lg-center text-start text-lg-center align-items-end h-100">
+									<div class="education-body-container">
+										<h3 class="card-subtitle">B.S. Computer Science</h3>
+										<h4 class="mt-1">3.7 GPA</h4>
+										<div class="mt-5">
+											<div class="align-items-end">
+												<img src="img/psu_logo.png" class="psu-logo" alt="Portland State University logo">
+												<span class="mt-3" style="font-size: 1.5em;">Portland State University</span>
+												<img src="img/psu_logo.png" class="psu-logo" alt="Portland State University logo">
+											</div>
+											<h5 class="mb-0">Graduation date: December 2022</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 pb-3 pb-lg-0">
+						<div class="card-secondary flex-item h-100 pb-3" id="Hard">
+							<div class="card-body row">
+								<div class="col-4 col-lg-12 mb-lg-3 d-flex align-items-center align-items-lg-start justify-content-center">
+									<div class="hard-skills-head-container">
+										<h2 class="card-title m-1 text-break">Capstone Project</h2>
+										<img src="img/blanchet.jpg" class="resume-logo rounded-circle" alt="hard skill logo">
+										<h3 class="card-title m-1 text-break">Blanchet House & Farm</h3>
+										<h5 class="m-1 fst-italic">June 2022 - Dec. 2022</h5>
+									</div>
+								</div>
+								<div class="col-8 col-lg-12 d-flex pb-lg-1 align-items-center justify-content-start justify-content-lg-center text-start">
+									<div class="hard-skills-body-container">
+										<ul class="tech-skills mb-0">
+											<li>
+												Worked with local homeless shelters to develop an availability management website
+											</li>
+											<li>
+												Used the Laravel PHP framework to design a map page that generates directions using the JavaScript Mapbox API
+and GeoJSON
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add the closing div tag for the second card here -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Experience Section-->
+
+		<!--Projects Section-->
+		<section class="projects" id="Projects">
+			<div class="container-fluid text-center pt-5">
+				<div class="mb-5">
+					<h1>Projects</h1>
+					<h5>Click on the buttons to try them out!</h5>
+				</div>
+				<div class="row d-flex justify-content-start">
+					<div class="col-12 col-lg-4 pb-3 pb-lg-0">
+						<div class="card-secondary h-100">
+							<div class="project-item-container">
+								<img
+									class="img-fill h-100 w-100"
+									src="img/mattsposts.png"
+									alt="Matt's Posts website"
+								/>
+							</div>
+							<div class="project-title pt-3">
+								<h3>Matt's Posts</h3>
+							</div>
+							<p class="project-info px-2">A forum website where users can share and engage with posts.</p>
+							<a type="button" class="btn btn-secondary mb-3" href="https://github.com/matt-pickett/Social-Media-App">Source code</a>
+							<a type="button" class="btn btn-tertiary mb-3" href="https://mattsposts.onrender.com/">Website</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 pb-3 pb-lg-0">
+						<div class="card-primary h-100">
+							<div class="project-item-container">
+								<img
+									class="img-fill h-100 w-100"
+									src="img/leaderboard.png"
+									alt="A screenshot of the New York Times website"
+								/>
+							</div>
+							<div class="project-title pt-3">
+								<h3>NYT Best Sellers</h3>
+							</div>
+							<p class="project-info px-2" style="margin-bottom: 40px">View the current New York Times best sellers.</p>
+							<a type="button" class="btn btn-primary mb-3" href="https://github.com/matt-pickett/Best-Sellers">Source code</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 pb-3 pb-lg-0">
+						<div class="card-secondary h-100">
+							<div class="img-fill project-item-container">
+								<img
+									class="img-cover h-100 w-100"
+									src="img/twitter.png"
+									alt="Twitter Reviews for iOS website"
+								/>
+							</div>
+							<div class="project-title pt-3">
+								<h3>Twitter Reviews</h3>
+							</div>
+							<p class="project-info px-3">View reviews for the iOS Twitter app in a user-friendly format.</p>
+							<a type="button" class="btn btn-secondary mb-3" href="https://github.com/matt-pickett/Twitter-Reviews">Source code</a>
+							<a type="button" class="btn btn-tertiary mb-3" href="https://www.twitter-reviews-ios.click/">Website</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 pt-0 pt-lg-3">
+						<div class="card-primary h-100">
+							<div class="img-fill project-item-container">
+								<img
+									class="img-cover h-100 w-100"
+									src="img/toxicity.png"
+									alt="toxic users"
+								/>
+							</div>
+							<div class="project-title pt-3">
+								<h3>Message Processor</h3>
+							</div>
+							<p class="project-info px-3">Calculates the toxicity level of users in a server.</p>
+							<a type="button" class="btn btn-primary mb-3" href="https://github.com/Pixelcutter/ChadBot">Source code</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 pt-0 pt-lg-3">
+						<div class="card-secondary h-100">
+							<div class="img-fill project-item-container">
+								<img
+									class="img-cover h-100 w-100"
+									src="img/pacman.png"
+									alt="toxic users"
+								/>
+							</div>
+							<div class="project-title pt-3">
+								<h3>Arcade Game</h3>
+							</div>
+							<p class="project-info px-3">A game similar to the famous Pacman arcade game.</p>
+							<a type="button" class="btn btn-secondary mb-3" href="https://github.com/matt-pickett/Arcade-Game">Source code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Projects Section-->
+
+		<!--Contact Section-->
+		<section class="contact" id="Contact">
+			<div class="container-fluid text-center pt-5">
+				<h1 class="contact-me mb-3">Contact Me</h1>
+				<div class="row d-flex justify-content-center">
+					<div class="col-12">
+						<form class="contact-form p-5" action="https://formsubmit.co/fc53f86cf118ed754262628913508a0d" method="POST"">
+							<div class="row mb-3">
+								<div class="col-md-4 text-start">
+									<label for="name">Name:</label>
+								</div>
+								<div class="col-md-8">
+									<input
+										type="text"
+										name="name"
+										class="form-control"
+										placeholder="Enter your name"
+										id="name"
+									/>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-md-4 text-start">
+									<label for="email">Email:</label>
+								</div>
+								<div class="col-md-8">
+									<input
+										type="email"
+										name="email"
+										class="form-control"
+										placeholder="Enter your email address"
+										id="email"
+									/>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-md-4 text-start">
+									<label for="message">Message:</label>
+								</div>
+								<div class="col-md-8">
+									<textarea
+										class="form-control"
+										name="message"
+										placeholder="Your message goes here"
+										id="message"
+										rows="4"
+									></textarea>
+								</div>
+							</div>
+							<div class="button-submit m-auto">
+								<input
+									type="submit"
+									class="btn btn-secondary btn-md mb-3"
+									value="Submit"
+								/>
+							</div>
+					</form>
+			</div>
+			<!--End Contact Section-->
+
+			<!-- Footer -->
+			<footer class="pt-5 pb-1">
+				<p class="text-center">&copy; Matthew Pickett 2023</p>
+			</footer>
+			<!-- End Footer -->
+		</section>
+		
 	</body>
 </html>
