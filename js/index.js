@@ -64,28 +64,40 @@ function toggleHomeContent() {
   }
 }
 
+function collapseNavbarMobile() {
+  if ($(window).width() < 992) {
+    $("#navbarNav").collapse("hide");
+  }
+}
+
 // Scroll to section minus navbar height
 $('#aboutBtn').click(function(){
   position = $('#About').offset().top - $('#Navbar').height();
   $("html, body").animate({scrollTop: position}, '500');
+  collapseNavbarMobile();
 });
 
 $('#aboutNav').click(function(){
   position = $('#About').offset().top - $('#Navbar').height();
   $("html, body").animate({scrollTop: position}, '500');
+  collapseNavbarMobile();
 });
 
-$('#resumeNav').click(function(){
-  position = $('#Resume').offset().top - $('#Navbar').height();
+$('#experienceNav').click(function(){
+  position = $('#Experience').offset().top - $('#Navbar').height();
   $("html, body").animate({scrollTop: position}, '500');
+  collapseNavbarMobile();
 });
 
 $('#projectsNav').click(function(){
   position = $('#Projects').offset().top - $('#Navbar').height();
   $("html, body").animate({scrollTop: position}, '500');
+  collapseNavbarMobile();
 });
 
 $('#contactNav').click(function(){
   position = $('#Contact').offset().top - $('#Navbar').height();
   $("html, body").animate({scrollTop: position}, '500');
+  collapseNavbarMobile();
 });
+
