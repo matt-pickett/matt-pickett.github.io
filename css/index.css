@@ -25,6 +25,11 @@ a {
 	text-decoration: none;
 }
 
+a[href="https://www.suvoda.com/"] {
+    color: var(--tan);
+	text-decoration: none;
+}
+
 a:hover, a:active {
 	color: var(--tan);
 	text-decoration: none;
@@ -133,6 +138,10 @@ li {
 	z-index: 2;
 	overflow: hidden;
 	transition: all 0.3s ease-out;
+}
+
+.card-title {
+	margin: 1rem !important;
 }
 /* End cards */
 
